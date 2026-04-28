@@ -1,0 +1,50 @@
+28-Apr-26 10:56:58 - ERROR - Unhandled exception: Telegram says: [400 BUTTON_URL_INVALID] (caused by "messages.EditMessage") Pyrogram 2.3.69 thinks: The button url is invalid [dispatcher.py:438]
+Traceback (most recent call last):
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\dispatcher.py", line 383, in _dispatch_to_handlers
+    await self._execute_handler(handler, *args)
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\dispatcher.py", line 410, in _execute_handler
+    await handler.callback(self.client, *args)
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\handlers\message_handler.py", line 154, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "G:\SHHULKA-REPO-main\main.py", line 521, in start
+    await start_message.edit_text(
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\types\messages_and_media\message.py", line 4504, in edit_text
+    return await self._client.edit_message_text(
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\methods\messages\edit_message_text.py", line 109, in edit_message_text
+    r = await self.invoke(rpc)
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\methods\advanced\invoke.py", line 80, in invoke
+    r = await self.session.invoke(
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\session\session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\session\session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\errors\rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.ButtonUrlInvalid: Telegram says: [400 BUTTON_URL_INVALID] (caused by "messages.EditMessage") Pyrogram 2.3.69 thinks: The button url is invalid
+28-Apr-26 10:58:48 - ERROR - Unhandled exception: Telegram says: [400 BUTTON_URL_INVALID] (caused by "messages.EditMessage") Pyrogram 2.3.69 thinks: The button url is invalid [dispatcher.py:438]
+Traceback (most recent call last):
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\dispatcher.py", line 383, in _dispatch_to_handlers
+    await self._execute_handler(handler, *args)
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\dispatcher.py", line 410, in _execute_handler
+    await handler.callback(self.client, *args)
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\handlers\message_handler.py", line 154, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "G:\SHHULKA-REPO-main\main.py", line 521, in start
+    await start_message.edit_text(
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\types\messages_and_media\message.py", line 4504, in edit_text
+    return await self._client.edit_message_text(
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\methods\messages\edit_message_text.py", line 109, in edit_message_text
+    r = await self.invoke(rpc)
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\methods\advanced\invoke.py", line 80, in invoke
+    r = await self.session.invoke(
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\session\session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\session\session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "G:\SHHULKA-REPO-main\.venv\lib\site-packages\pyrogram\errors\rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.ButtonUrlInvalid: Telegram says: [400 BUTTON_URL_INVALID] (caused by "messages.EditMessage") Pyrogram 2.3.69 thinks: The button url is invalid
